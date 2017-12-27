@@ -139,15 +139,6 @@ public class MainActivity extends AppCompatActivity {
         float z1 = accelerometerValues[2];
 
         try {
-            //拼接JSON
-            String dataJson = "{\"x\":" + x1 +
-                    ",\"y\":" + y1 +
-                    ",\"z\":" + z1 +
-                    ",\"gyro_rotation_x\":" + axisX +
-                    ",\"gyro_rotation_y\":" + axisY +
-                    ",\"gyro_rotation_z\":" + axisZ +
-                    ",\"SENSORID\":\"Android\",\"stime\":" + gyrTime +
-                    "}";
 
             //下面的是陀螺仪的数据 ,上面的是加速度的数据
             String dataJson2 = "{\"x\":" + x1 +
@@ -177,6 +168,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //建立sdk客户端
     public  void startSDK(){
         try {
             FileHandler fileHandler = new FileHandler("/storage/emulated/0/dasudian/RotateException.txt",true);
@@ -191,10 +183,10 @@ public class MainActivity extends AppCompatActivity {
 
         //服务器地址
         String server_url = "tcp://119.23.147.127:1883";
-        //your instanceId
-        String instanceId = "dsd_9HsIJEZF9c76Nh6mEy_A";
-        //your instanceKey
-        String instanceKey = "3438f4e7f7d5268e";
+        //instance id, 标识客户的唯一ID，请联系大数点商务support@dasudian.com获取
+        String instanceId = "XXXX";
+        //instance key, 与客户标识相对应的安全密钥，请联系大数点商务support@dasudian.com获取
+        String instanceKey = "XXXXX";
 
         //客户端设备类型
         String clientType = "clientType";

@@ -6,8 +6,8 @@
 
 # 使用
 
-## 编译
+## 编译 使用 Android-Studio-2.3.1 进行编译(打开该项目后,点击Build->Generate Signed APK ->新建相应的 .jks文件 即可生成.apk文件 )
 
-依赖平台:
+依赖平台:Ubuntu16.04
 
-## 运行
+## 运行 把.apk文件安装在您的手机上,既可使用
